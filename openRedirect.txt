@@ -1,0 +1,11 @@
+For example, with this tag, we can add a get param called "redirectUri" and tamper with the href value:
+<a href="https://www.bugbountyhunter.com/" id="redirectUri" name="redirectUri">here</a>
+
+%E3%80%82 = .
+
+Final URL =
+https://www.bugbountytraining.com/challenges/challenge-7.php?redirectUri=https://www%E3%80%82google%E3%80%82com#bugbountyhunter.com/
+
+It will redirect to google.com
+
+This happens because the website tried to add some filter and also a regex on *.bugbountyhunter.com 
