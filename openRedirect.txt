@@ -9,3 +9,11 @@ https://www.bugbountytraining.com/challenges/challenge-7.php?redirectUri=https:/
 It will redirect to google.com
 
 This happens because the website tried to add some filter and also a regex on *.bugbountyhunter.com 
+
+
+--------------------
+
+Browsers treat // as http(s):
+//evilsite.com = https://evilsite.com
+/%0D/evilsite.com = https://evilsite.com
+/%0A/evilsite.com = https://evilsite.com
